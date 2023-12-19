@@ -25,15 +25,6 @@
       <h2>재능기부 게시글 수정</h2>
     </div>
     <div class="form-container">
-<!--      <form class="form-inputs-container" th:action="@{/talent-transaction/save}" th:object="${newPost}" method="post">-->
-<!--        <p class="input-name">제목: <input class="input-text" type="text" th:field="*{title}"/></p>-->
-<!--        <p class="input-name">일정: <input class="input-text" type="text" th:field="*{plan}" /></p>-->
-<!--        <p class="input-name">장소: <input class="input-text" type="text" th:field="*{place}" /></p>-->
-<!--        <p class="input-name">설명: <input class="input-text" type="text" th:field="*{content}" /></p>-->
-<!--        <p class="input-name">종류: <input class="input-text" type="text" th:field="*{topic}" /></p>-->
-<!--        <p class="input-name">인원: <input class="input-text" type="number" th:field="*{person}" /></p>-->
-<!--        <p><button type="submit">작성하기</button></p>-->
-<!--      </form>-->
       <form class="form-inputs-container" th:action="@{/talent-transaction/edit}" th:object="${post}" method="post">
         <p class="input-name"><input type="hidden" th:field="*{id}"></p>
         <p class="input-name">제목: <input class="input-text" type="text" th:field="*{title}" /></p>
@@ -50,20 +41,5 @@
     </div>
   </div>
 </article>
-<!--<h1>Update Post</h1>-->
-<!--<form th:action="@{/talent-transaction/edit}" th:object="${post}" method="post">-->
-<!--  <p>ID: <input type="hidden" th:field="*{id}"></p>-->
-<!--  <p>Title: <input type="text" th:field="*{title}" /></p>-->
-<!--  <p>Content: <input type="text" th:field="*{content}" /></p>-->
-<!--  <p>Topic: <input type="text" th:field="*{topic}" /></p>-->
-<!--  <p>Place: <input type="text" th:field="*{place}" /></p>-->
-<!--  <p>Person: <input type="text" th:field="*{person}" /></p>-->
-<!--  <p>Plan: <input type="text" th:field="*{plan}" /></p>-->
-<!--  <p>Picture: <input type="text" th:field="*{picture}" /></p>-->
-<!--  <p><button type="submit">Update</button></p>-->
-<!--</form>-->
-<!--<div>-->
-<!--  <a th:href="@{/talent-transaction/post/{id}(id=${post.id})}">Back to Post Details</a>-->
-<!--</div>-->
 </body>
 </html>
